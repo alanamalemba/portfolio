@@ -4,124 +4,114 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alan Amalemba | Portfolio</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./mediaqueries.css" />
-    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav id="desktop-nav">
-      <p class="logo">Alan Amalemba</p>
-      <div>
-        <ul class="nav-links">
+    <header>
+      <h1 class="heading">Alan Amalemba</h1>
+
+      <nav class="main-nav">
+        <menu>
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
+          <li><a href="#contacts">Contacts</a></li>
+        </menu>
+      </nav>
 
-    <nav id="hamburger-nav">
-      <p class="logo">Alan Amalemba</p>
-
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
+      <nav class="side-nav">
+        <button class="toggle-sidenav-btn">
           <span></span>
           <span></span>
           <span></span>
-        </div>
+        </button>
 
-        <ul class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
+        <menu>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+        </menu>
+      </nav>
+    </header>
 
-    <section id="profile" class="socials-container">
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Alan Amalemba</h1>
-        <p class="section__text__p2">Software Engineer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/alan-amalemba-resume.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact' ">
-            Contact
-          </button>
-        </div>
-        <div id="socials-container">
-          <a href="https://www.linkedin.com/in/alanamalemba/">
-            <img
-              src="./assets/linkedin.png"
-              alt="LinkedIn Profile"
-              class="icon"
-            />
-          </a>
-          <a href="https://www.github.com/alanamalemba">
-            <img src="./assets/github.png" alt="Github Profile" class="icon" />
-          </a>
-        </div>
-      </div>
-      <div class="section__pic-container">
-        <img
-          class="profile-pic"
-          src="./assets/profile-photo.png"
-          alt="Alan Amalemba profile picture"
-        />
-      </div>
-    </section>
+    <main>
+      <section id="hero">
+        <div id="profile-details">
+          <p class="greeting">Hello I'm</p>
+          <h2 class="name">Alan Amalemba</h2>
+          <p class="career">Software Engineer</p>
 
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-
-      <h2 class="title">About Me</h2>
-
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            class="profile-pic-about"
-            src="./assets/profile-photo.png"
-            alt="Alan Amalemba profile picture"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                class="icon"
-                alt="Experience icon"
-              />
-              <h3>Experience</h3>
-              <p>
-                2+ years <br />
-                Fullstack Development
-              </p>
-            </div>
-
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                class="icon"
-                alt="Education icon"
-              />
-              <h3>Education</h3>
-              <p>
-                Bachelor of Science (B.Sc) <br />
-                Computer Science
-              </p>
-            </div>
+          <div class="profile-details-buttons-container">
+            <a
+              class="download-cv-link"
+              href="./assets/alan-amalemba-resume.pdf"
+              target="_blank"
+              >Download CV</a
+            >
+            <a class="contact-info-link">Contact info</a>
           </div>
 
-          <div class="text-container">
-            <p>
+          <div class="socials-links-container">
+            <a href="https://www.linkedin.com/in/alanamalemba/">
+              <img
+                class="icon"
+                src="./assets/linkedin.png"
+                alt="LinkedIn icon"
+              />
+            </a>
+            <a href="https://www.github.com/alanamalemba">
+              <img class="icon" src="./assets/github.png" alt="Github icon" />
+            </a>
+          </div>
+        </div>
+
+        <img
+          src="./assets/profile-photo.png"
+          alt="Profile photo"
+          class="profile-photo"
+        />
+      </section>
+
+      <section id="about">
+        <p class="gray-text" style="text-align: center">Get to know more</p>
+        <h2 class="sub-heading">About Me</h2>
+
+        <div class="about-details">
+          <img class="about-photo" src="./assets/profile-photo.png" alt="" />
+
+          <div class="about-info">
+            <div class="info-cards-container">
+              <article class="info-card">
+                <img
+                  class="icon"
+                  src="./assets/experience.png"
+                  alt="Experience icon"
+                />
+
+                <h3 class="info-title">Experience</h3>
+                <p class="gray-text" style="text-align: center">
+                  2+ years <br />
+                  Fullstack Development
+                </p>
+              </article>
+
+              <article class="info-card">
+                <img
+                  class="icon"
+                  src="./assets/education.png"
+                  alt="Education icon"
+                />
+
+                <h3 class="info-title">Education</h3>
+                <p class="gray-text" style="text-align: center">
+                  Bachelor of Science (B.Sc) <br />
+                  Computer Science
+                </p>
+              </article>
+            </div>
+
+            <p class="about-summery gray-text">
               A highly skilled Fullstack Software Engineer with hands-on
               experience in frontend and backend development. Proficient in
               creating user-centric web applications and collaborating
@@ -130,13 +120,9 @@
             </p>
           </div>
         </div>
-      </div>
 
-      <a class="arrow" href="#experience">
-        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon" />
-      </a>
-    </section>
-
-    <section id="experience"></section>
+        <!-- todo: add arrow down button/link -->
+      </section>
+    </main>
   </body>
 </html>
