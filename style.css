@@ -49,15 +49,20 @@ a:visited {
 
 /* HEADER */
 
+/* * {
+  outline: red 1px solid;
+} */
+
 header {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
   height: 15vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .heading {
   font-size: 2rem;
+  margin: 0;
 }
 
 .main-nav menu {
@@ -78,6 +83,48 @@ header {
 }
 
 .side-nav {
+  display: none;
+}
+
+.toggle-side-nav-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 18px;
+  width: 30px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.toggle-side-nav-btn span {
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: black;
+  transition: all 0.3 ease-in-out;
+}
+
+.open-side-nav {
+  display: block;
+}
+
+.close-side-nav-btn {
+  position: fixed;
+  z-index: 2;
+  top: 2rem;
+  right: 2rem;
+}
+
+.close-side-nav-btn span:first-child {
+  transform: rotate(45deg) translateX(10px);
+}
+
+.close-side-nav-btn span:last-child {
+  transform: rotate(-45deg) translateX(10px);
+}
+
+.close-side-nav-btn span:nth-child(2) {
   display: none;
 }
 
@@ -168,7 +215,7 @@ header {
 
 #about {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -190,7 +237,8 @@ header {
   opacity: 90%;
 }
 
-.about-photo:hover {
+.about-photo:hover,
+.about-photo:active {
   filter: grayscale(0%);
   opacity: 100%;
   scale: 1.025;
@@ -235,7 +283,7 @@ header {
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   justify-content: center;
 }
 
@@ -379,6 +427,7 @@ header {
 .contact-details a {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 0.5rem;
 }
 
