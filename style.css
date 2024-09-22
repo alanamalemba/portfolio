@@ -27,7 +27,7 @@ section {
 }
 
 a:visited {
-  color: black;
+  color: rgb(192, 192, 255);
 }
 
 .gray-text {
