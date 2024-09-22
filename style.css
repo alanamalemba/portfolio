@@ -30,6 +30,23 @@ a:visited {
   color: black;
 }
 
+.gray-text {
+  color: rgb(85, 85, 85);
+}
+
+.next-link {
+  position: absolute;
+  right: -4rem;
+  bottom: 1rem;
+}
+
+.sub-heading {
+  font-weight: 600;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 0.2rem;
+}
+
 /* HEADER */
 
 header {
@@ -67,6 +84,7 @@ header {
 /* HERO */
 
 #hero {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -91,8 +109,8 @@ header {
 }
 
 #profile-details .name {
-  font-weight: bold;
-  font-size: 2.75rem;
+  font-weight: 700;
+  font-size: 3rem;
 }
 
 #profile-details .career {
@@ -148,18 +166,8 @@ header {
 
 /*  ABOUT */
 
-.gray-text {
-  color: rgb(128, 128, 128);
-}
-
-.sub-heading {
-  font-weight: bold;
-  font-size: 2.75rem;
-  text-align: center;
-  margin-top: 0.5rem;
-}
-
 #about {
+  position: relative;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -219,4 +227,186 @@ header {
 
 .info-title {
   font-weight: 600;
+}
+
+/* EXPERIENCE */
+
+#experience {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+.experience-details {
+  margin-top: 2.5rem;
+}
+
+.experience-cards-container {
+  display: flex;
+  align-items: stretch;
+  gap: 2rem;
+}
+
+.experience-card {
+  flex: 1;
+  display: flex;
+  border: rgb(128, 128, 128) solid 1px;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1.5rem 4rem;
+  border-radius: 2rem;
+}
+
+.experience-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.skill-item span {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+/* PROJECTS */
+#projects {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 1.5rem;
+  gap: 2rem;
+}
+
+.project-card {
+  border: rgb(85, 85, 85) 1px solid;
+  border-radius: 2rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.project-image {
+  width: 90%;
+  aspect-ratio: 1;
+  border-radius: 2rem;
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+  object-position: -2rem;
+}
+
+.project-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  text-align: center;
+  width: 90%;
+  margin: 1rem auto 0;
+}
+
+.project-description {
+  text-align: center;
+  margin-top: 0.5.rem;
+  width: 90%;
+  margin: 0.5rem auto 0;
+}
+
+.project-card-links-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  margin: 1rem auto 0;
+  gap: 1rem;
+}
+
+.project-card-link {
+  padding: 1rem;
+  background-color: whitesmoke;
+  width: 8rem;
+  border-radius: 2rem;
+  border: solid rgb(85, 85, 85) 1px;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.project-card-link:hover {
+  background-color: rgb(85, 85, 85);
+  color: white;
+}
+
+/* CONTACTS */
+#contacts {
+  min-height: 80vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  border: solid rgb(85, 85, 85) 1px;
+  padding: 2rem;
+  border-radius: 2rem;
+  margin-top: 2.5rem;
+}
+
+.contact-details a {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.contact-details a span {
+  font-size: 1.25rem;
+}
+
+/* FOOTER */
+
+.footer-nav menu {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-nav menu li a {
+  font-size: 1.5rem;
+}
+
+.footer-nav menu li a:hover {
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  color: gray;
+}
+
+.copyright-info {
+  color: rgb(85, 85, 85);
+  text-align: center;
+  margin: 2.5rem auto;
 }
