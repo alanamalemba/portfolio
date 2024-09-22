@@ -26,10 +26,6 @@ section {
   margin: 0 auto;
 }
 
-a:visited {
-  color: rgb(192, 192, 255);
-}
-
 .gray-text {
   color: rgb(85, 85, 85);
 }
